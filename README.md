@@ -193,18 +193,18 @@ they get `NA` values. I complete these values later using the global
 
 Now, I calculate the percentage of three categories of chords:
 
--   Category 1: minor and diminished chords
+- Category 1: minor and diminished chords
 
--   Category 2: suspended chords
+- Category 2: suspended chords
 
--   Category 3: other chords
+- Category 3: other chords
 
 Suspended chords are ambiguous, in the sense that they are neither sad
 nor happy. It depends entirely on which chord they resolve into. So they
-are separated in its own category.
+are separated into their own category.
 
 Then, we compute the coefficient *Category 3* minus *Category 1*, which
-is between -1 and 1, and then embed the image into the interval \[0,1\].
+is between -1 and 1, and then embed the image into the interval $[0,1]$.
 
 ``` r
 get_chord_coefficients <- function(chords){
@@ -325,10 +325,10 @@ gloom_index_chart <- function(table, title = ''){
 gloom_index_chart(thompson_method, 'Thompson method')
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](README_files/figure-gfm/unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
 gloom_index_chart(my_method, 'My method')
 ```
 
-![](README_files/figure-markdown_github/unnamed-chunk-11-2.png)
+![](README_files/figure-gfm/unnamed-chunk-11-2.png)<!-- -->
